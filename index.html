@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureMe: Write a Letter to your future self</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+        <!-- navigation bar -->
+
+        <nav>
+            <div class="navbar px-3">
+
+                <div class="container-fluid p-0 ps-xl-2 pe-xl-3">
+                    <!-- primary logo -->
+
+                    <div class="primary-logo me-2 float-start">
+                        <span><img src="images/logo-reverse@1x-056e77a61325f5f09d494ef19e0f2aab3ab1a50253c361e57169e3bd923053ed.svg" alt=""></span>
+                    </div>
+
+                    <!-- left side links -->
+
+                    <div class="menu float-start me-auto d-none d-md-block">
+                        <ul class="links list-unstyled list-inline mb-0">
+                            <li class="list-inline-item ps-3"><a href="#" class="text-decoration-none underline-animation">
+                                <span class="icon text-primary">
+                                    <i class="fa-solid fa-pen fa-xs me-1"></i>
+                                </span>
+                                <span class="h5">Write a Letter to the future</span>
+                            </a></li>
+
+                            <li class="list-inline-item ps-3"><a href="#" class="text-decoration-none text-white underline-animation">
+                                <span class="icon text-primary">
+                                    <i class="fa-solid fa-book-open-reader fa-xs me-1"></i>
+                                </span>
+                                <span class="h5">Read Public Letters</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- right side links -->
+
+                    <div class="menu2 d-none d-xl-flex">
+                        <img src="images/fm.svg" alt="">
+                        <span class="text-primary ms-2 me-2">for</span>
+                        <a href="#" id="right1" class="text-decoration-none text-light pe-2">business</a>
+
+                        <span class="text-primary ms-2 me-2">and</span>
+                        <a href="#" id="right2" class="text-decoration-none text-light pe-2">education</a>
+
+                        <ul class="links list-unstyled list-inline mb-0 ms-4 me-4">
+                            <li class="list-inline-item me-4">
+                                <a href="#" class="text-white text-decoration-none underline-animation">Blog</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="text-white text-decoration-none underline-animation">Press & Props</a>
+                            </li>
+                        </ul>
+
+                        <div class="dropdown">
+                            <a href="#" role="button" class="dropbtn btn btn-outline-light"><span>Sign In</span></a>
+                            <a href="#" role="button" class="dropbtn2 btn btn-light text-primary"><span>Sign Up</span></a>
+                        </div>
+                    </div>
+
+                    <!-- hidden dropdown that appears when screen less that 1200px -->
+
+                    <div class="hidden-dropdown position-relative d-xl-none dropstart">
+                        <button class="btn hidden-btn" type="button" id="dropmenu" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-xl text-light"></i>
+                        </button>
+                    
+                        <ul class="dropdown-menu position-absolute bg-light p-2 rounded-4" aria-labelledby="dropmenu">
+                            <div class="signinbtn mb-2">
+                                <a href="#" class="btn btn-outline-primary px-4 py-1">Sign In</a>
+                                <a href="#" class="btn btn-primary px-4 py-1">Sign Up</a>
+                            </div>
+                    
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="text-secondary"><small>FutureMe for</small></span>
+                                    <span id="drop-business" class="text-light float-end">business</span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="text-secondary"><small>FutureMe for</small></span>
+                                    <span id="drop-education" class="text-light float-end">education</span>
+                                </a>
+                            </li>
+                    
+                            <div class="menu-btn d-md-none">
+                                <li>
+                                    <a href="#" class="dropdown-item d-flex justify-content-between">
+                                        <span class="float-start"><i class="fa-solid fa-pen fa-sm text-primary"></i></span>
+                                        <span class="float-end"><small>Write a letter to the Future</small></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item d-flex justify-content-between">
+                                        <span class="float-start"><i class="fa-solid fa-book-open-reader fa-sm text-primary"></i></span>
+                                        <span class="float-end"><small>Read Public Letters</small></span>
+                                    </a>
+                                </li>
+                            </div>
+                    
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="text-primary float-start"><i class="fa-solid fa-rss fa-sm"></i></span>
+                                    <span class="float-end"><small>Blog</small></span>
+                                </a>
+                            </li>
+                    
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    <span class="text-primary float-start"><i class="fa-solid fa-newspaper fa-sm"></i></span>
+                                    <span class="float-end"><small>Press & Props</small></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div> 
+            </div>
+        </nav>
+
+        <section class="home-section px-4 py-3 px-xl-5 py-xl-4">
+            <!-- home section -->
+
+            <header class="header">
+                <h1 class="text-light is-tight">Write a letter to your future self</h1>
+                <p class="tagline"><span class="text-white">Write.</span> Pick a receiving date. <span class="text-white">Send.</span> Verify. That’s it 😊<br>
+                    Your letter is <span class="text-white">safe</span> with us - we’ve sent over <span class="text-white">20 million letters</span> in 20 years!
+                    </p>
+            </header>
+
+            <!-- new letter -->
+
+                <!-- todays date -->
+
+                <div class="container m-0 d-xl-none">
+                    <textarea id="dateareatext" class="datearea" placeholder=""></textarea>
+                </div>
+
+            <div class="new-letter container-fluid mb-3 p-0">
+                    <form id="future-email" class="align-items-center">
+                        <div class="row">
+
+                            <div class="col-12 col-xl-8 col-lg-7">
+                                <label for="email-content"><a href="#" class="d-lg-none d-block mb-2 text-decoration-none text-light underline-animation2">Full screen <i class="fa-solid fa-expand"></i></a></label>
+                                <textarea name="text" id="email-content" class="p-4 rounded-4">Dear FutureME,</textarea>
+                            </div>
+
+                            <div class="col-12 col-xl-4 col-lg-5 mt-3 ps-4">
+                                <div class="time mb-3">
+                                    <span><small><strong>Delivery time</strong></small></span>
+                                    <div class="category">
+                                        <input type="radio" name="time" id="6months" checked>
+                                        <label for="6months" class="btn text-light py-1 px-2">6 months</label>
+        
+                                        <input type="radio" name="time" id="1year">
+                                        <label for="1year" class="btn text-light py-1 px-2">1 year</label>
+        
+                                        <input type="radio" name="time" id="3years">
+                                        <label for="3years" class="btn text-light py-1 px-2">3 years</label>
+        
+                                        <input type="radio" name="time" id="5years">
+                                        <label for="5years" class="btn text-light py-1 px-2">5 years</label>
+        
+                                        <input type="radio" name="time" id="10years">
+                                        <label for="10years" class="btn text-light py-1 px-2">10 years</label>
+                                    </div>
+                                </div>
+
+                                <div class="audience mb-3">
+                                    <span><small><strong>Select your audience</strong></small></span>
+                                    <div class="category">
+                                        <input type="radio" name="audience" id="private" checked>
+                                        <label for="private" class="btn text-light py-1 px-2">Private</label>
+        
+                                        <input type="radio" name="audience" id="others">
+                                        <label for="others" class="btn text-light py-1 px-2">Public, but anonymous</label>
+                                    </div>
+                                </div>
+
+                                <div class="email mb-3">
+                                    <span><small><strong>Make sure you get your email</strong></small></span>
+                                    <div class="input-email position-relative"><i class="fa-solid fa-envelope fa-lg"></i>
+                                        <input type="text" id="email" placeholder="please enter an email" required>
+                                        <p id="error-message" style="color: red;"></p>
+                                    </div>
+                                </div>
+
+                                <div class="pick_your_style mb-3">
+                                    <span><small><strong>Pick your style</strong></small></span>
+
+                                    <div class="radiobtn">
+                                        <input type="radio" name="style" id="op1" class="form-check-input d-none" checked>
+                                        <label for="op1" class="btn px-5 py-2 position-relative d-flex justify-content-between"><div class="radio-circle"></div>
+                                            <span>Send just this letter</span>
+                                            <span>Free</span>
+                                        </label>
+                                    </div>
+                                        
+                                    <div class="radiobtn">    
+                                        <input type="radio" name="style" id="op2" class="form-check-input d-none">
+                                        <label for="op2" class="btn px-5 py-2 position-relative d-flex justify-content-between"><div class="radio-circle"></div>
+                                            <span>Send this letter + Support FutureMe</span>
+                                            <span>&#8377;109</span>
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="terms_of_use">
+                                    <p><strong>You will receive a confirmation email - please make sure your email address is correct! By writing a letter and signing up for FutureMe you agree to the Terms of use <span><a href="#" class="underline-animation2">Terms of Use</a></span></strong></p>
+                                </div>
+
+                                <div class="submitbtn">
+                                    <button type="submit" class="btn p-3 gradient animate"><span class="text-light fs-4"><strong>Send to the Future</strong></span></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>  
+            </div>
+        </section>
+
+        <!-- second page -->
+
+        <section class="second-page">
+
+            <!-- messages -->
+
+            <div class="messages container-xl py-5 px-4">
+                <div class="container p-0">
+                    <p>FutureMe letters are great for...</p>
+                <ul class="list-unstyled">
+                    <li class="list-item"><span class="emoji ">❤️</span><p><strong>Reliving memories</strong> in vivid detail</p></li>
+                    <li class="list-item"><span class="emoji">📈</span><p><strong>Acknoledging growth</strong> & achievements</p></li>
+                    <li class="list-item"><span class="emoji">✅</span><p><strong>Setting goals</strong> for the future</p></li>
+                    <li class="list-item"><span class="emoji">😌</span><p><strong>Decluttering</strong> your mind to find some headspace</p></li>
+                </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- apps section -->
+
+        <section class="apps p-5">
+            <div class="outer-box container p-0">
+                <div class="contentbox container border border-4 border-primary rounded-4 position-relative">
+                    <div class="heading apps">
+                        <h2><span class="text-secondary">Download our</span> Official Mobile App <span class="text-primary"><i class="fa-solid fa-mobile-screen"></i></span></h2>
+                        <h4 class="tagline text-primary mt-3">Never leave the life of your letter at the mercy of an overcrowded inbox ever again!</h4>
+                    </div>
+                    <div class="content">
+                        <p>With our new app, all you have to do is login to your account to view a list of letters you’ve sent, and your collection of letters you have already received to date!                        </p>
+                    </div>
+                    <div class="downloadimg d-flex">
+                        <a href="#"><img src="images/appledownload.png" alt=""></a>
+                        <a href="#"><img src="images/googledownload.png" alt=""></a>
+                    </div>
+
+                    <div class="phone-image-smaller d-xl-none d-flex">
+                        <img src="images/phonebACK.png" alt="">
+                        <img src="images/phonefront.png" alt="">
+                    </div>
+
+                    <div class="phone-image d-none d-xl-block">
+                        <img src="images/phonefront.png" alt="">
+                        <img src="images/phonebACK.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- video section -->
+
+        <section class="video-section py-5 px-3">
+
+            <div class="headingvideo container p-0">
+                <div class="intro">
+                    <h2>Are you a manager, business owner, team leader, or education worker?</h2>
+                    <p>Explore the customisable version of our platform for those looking to engage and motivate their own communities at FutureMe Business & FutureMe Education.</p>
+                </div>
+            </div>
+            <div class="video container p-0">
+                <div class="container-fluid ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/LaqLJZG1kTM?si=gAzD4uWFGGfWh-C4" frameborder="0" class="rounded-4 shadow-lg" allow="accelerometer; autoplay; gyroscope"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- cards section -->
+
+        <section class="cards-section p-5">
+            <div class="container p-0">
+                <div class="title">
+                    <h2><span>Need some</span> inspiration <span>?</span></h2>
+                </div>
+                <div class="cards container p-0">
+                    <div class="row">
+
+                        <div class="col-md-6 mb-4">
+                            <div class="grid-item">
+                                <img src="images/card1.jpg" class="rounded-4 img-fluid card1">
+                                <div class="writing1">
+                                    <a href="#" class="underline-animation"><p>Goal-setting</p></a>
+                                    <a href="#" class="underline-animation"><h2>How writing down your goals literally helps you achive them</h2></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class="grid-item">
+                                <img src="images/card2.jpg" class="rounded-4 img-fluid card2">
+                                <div class="writing2">
+                                    <a href="#" class="underline-animation"><p>Mindfulness</p></a>
+                                    <a href="#" class="underline-animation"><h2>Why should i write a letter to my future self?</h2></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6 mb-4">
+                            <div class="grid-item">
+                                <img src="images/card3.png" class="rounded-4 img-fluid card1">
+                                <div class="writing3">
+                                    <a href="#" class="underline-animation"><p>Writing letters to the future</p></a>
+                                    <a href="#" class="underline-animation"><h2>How to writre a letter to yoursef: Capture a memory</h2></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class="grid-item">
+                                <img src="images/card4.png" class="rounded-4 img-fluid card1">
+                                <div class="writing4">
+                                    <a href="#" class="underline-animation"><p>Writing letters to the future</p></a>
+                                    <a href="#" class="underline-animation"><h2>How to writre a letter to yoursef: The gratitude list</h2></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- collab-section -->
+
+        <section class="collab-section">
+
+            <div class="container-fluid p-5 d-flex">
+                <div class="collaborators container-fluid d-flex">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><img src="images/collab1.svg" ></li>
+                        <li class="list-inline-item"><img src="images/collab2.svg" ></li>
+                        <li class="list-inline-item"><img src="images/collab3.svg" ></li>
+                        <li class="list-inline-item"><img src="images/collab4.svg" ></li>
+                        <li class="list-inline-item"><img src="images/collab5.svg" ></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer class="footer p-5">
+
+            <div class="footer container-xl m-0 p-0">
+
+                <!-- footer logo -->
+
+                <div class="footer-logo mb-4">
+                    <a href=""><img src="images/logo-reverse@1x-056e77a61325f5f09d494ef19e0f2aab3ab1a50253c361e57169e3bd923053ed.svg" ></a>
+                </div>
+
+                <!-- footer-links -->
+
+                <div class="link mb-4">
+                    <ul class="list-unstyled list-inline" id="footer-links">
+                        <li class="list-inline-item me-4"><i class="fa-solid fa-pen fa-xs text-light me-2"></i><a href="#" class="text-white h5 underline-animation text-decoration-none">Write a Letter</a></span>
+                        </li>
+
+                        <li class="list-inline-item me-4"><i class="fa-solid fa-book-open-reader fa-xs text-light me-2"></i><a href="#" class="text-light h5 underline-animation text-decoration-none">Read Public Letters</a>
+                        </li>
+
+                        <li class="list-inline-item me-4"><i class="fa-solid fa-right-to-bracket fa-xs text-white me-2"></i><a href="#" class="h5 text-white underline-animation text-decoration-none">Sign In</a>
+                        </li>
+
+                        <li class="list-inline-item me-4"><i class="fa-solid fa-user fa-xs text-white me-2"></i><a href="#" class=" h5 text-white underline-animation text-decoration-none">Sign Up</a>
+                        </li>
+                        <li class="list-inline-item me-4"><i class="fa-solid fa-paper-plane fa-xs text-white me-2"></i><a href="#" class="h5 text-white underline-animation text-decoration-none">Invite a friend</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- footer-list -->
+
+                <div class="list-footer">
+                    <ul class="footer-list list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">Press & Props</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">FAQ</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">Jobs</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">Advertise</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">Support</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-white underline-animation2">Blog</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- social media links -->
+
+                <div class="socail-links mt-5 mb-4">
+                    <a href="#" class="m-3 text-light"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="#" class="m-3 text-light"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                    <a href="#" class="m-3 text-light"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                    <a href="#" class="m-3 text-light"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    <a href="#" class="m-3 text-light"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+
+
+                <!-- links to download apps -->
+
+                <div class="downloadimg mb-3">
+                    <a href="#"><img src="images/appledownload.png" alt=""></a>
+                    <a href="#"><img src="images/googledownload.png" alt=""></a>
+                </div>
+
+                <div class="bottom-logos mb-3">
+                    
+                    <a href="#" class="me-3"><img src="images/bottom-logo-1.svg" ></a>
+                    <a href="#" class="ms-3"><img src="images/bottom-logo-2.svg" ></a>
+                    
+                </div>
+
+
+                <!-- terms and conditions -->
+
+                <div class="terms-and-cond bottom-terms">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light underline-animation2"><small>Terms of use</small></a></li>
+                        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light underline-animation2"><small>Privacy Policy</small></a></li>
+                    </ul>
+                    <p class="text-light"><small>FutureMe&trade; brought to you by Memories Group Limited &copy 2002-2024.</small>
+                        <br>
+                    <small>Yup - we've been sending letters to the future for almost 23 years now</small>    
+                    </p>
+                </div>
+
+
+            </div>
+
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
